@@ -1,4 +1,14 @@
 /* PIXEL NET UI */
+
+/* PN-FONTS (font face) */
+@font-face {
+    font-family: "Outfit";
+    src: url("fonts/Outfit-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root{
     /* PN-COLORS */
     --pn-green: rgba(35, 145, 35, 0.808);
@@ -9,6 +19,56 @@
     --pn-purple: rgba(197, 52, 197, 0.646);
     --pn-pink: rgb(242, 25, 220);
     --pn-gray: rgba(120, 119, 119, 0.742);
-    --pn-black: rgba(22, 22, 22, 0.742);
+    --pn-black: rgba(22, 22, 22, 0.847);
     --pn-white: rgba(241, 240, 240, 0.916);
+    --pn-cyan: rgba(18, 190, 207, 0.85);
+    --pn-teal: rgba(20, 150, 140, 0.85);
+    --pn-lime: rgba(130, 190, 25, 0.85);
+    --pn-indigo: rgba(70, 65, 190, 0.85);
+    --pn-brown: rgba(130, 80, 45, 0.85);
+    /* PN-FONTS (root) */
+    --pn-title-font: "Outfit", sans-serif;
+    --pn-title-weight: 600;
+    }
+
+h1 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 3rem;
+    color: var(--pn-black);
+}
+
+h2 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 2.5rem;
+    color: var(--pn-black);
+}
+
+h3 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 2rem;
+    color: var(--pn-black);
+}
+
+h4 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 1.75rem;
+    color: var(--pn-black);
+}
+
+h5 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 1.5rem;
+    color: var(--pn-black);
+}
+
+h6 {
+    font-family: var(--pn-title-font);
+    font-weight: var(--pn-title-weight);
+    font-size: 1.25rem;
+    color: var(--pn-black);
 }
