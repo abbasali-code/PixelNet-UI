@@ -1,0 +1,14 @@
+/* PIXEL NET UI */
+:root{
+    /* PN-COLORS */
+    --pn-green: rgba(35, 145, 35, 0.808);
+    --pn-blue: rgba(25, 93, 211, 0.712);
+    --pn-red: rgba(193, 13, 13, 0.904);
+    --pn-yellow: rgba(243, 243, 35, 0.897);
+    --pn-orange: rgba(241, 81, 13, 0.947);
+    --pn-purple: rgba(197, 52, 197, 0.646);
+    --pn-pink: rgb(242, 25, 220);
+    --pn-gray: rgba(120, 119, 119, 0.742);
+    --pn-black: rgba(22, 22, 22, 0.742);
+    --pn-white: rgba(241, 240, 240, 0.916);
+}
