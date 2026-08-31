@@ -8,7 +8,13 @@
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: "PlusJ";
+    src: url("fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 :root{
     /* PN-COLORS */
     --pn-green: rgba(35, 145, 35, 0.808);
@@ -26,9 +32,12 @@
     --pn-lime: rgba(130, 190, 25, 0.85);
     --pn-indigo: rgba(70, 65, 190, 0.85);
     --pn-brown: rgba(130, 80, 45, 0.85);
-    /* PN-FONTS (root) */
+    --pn-text-color: rgba(60, 60, 60, 0.85);
+    /* PN-TYPOGRAPHY (root) */
     --pn-title-font: "Outfit", sans-serif;
     --pn-title-weight: 600;
+    --pn-text-font:"PlusJ" , Arial , sans-serif;
+    --pn-text-weight: 400;
     }
 
 h1 {
@@ -71,4 +80,26 @@ h6 {
     font-weight: var(--pn-title-weight);
     font-size: 1.25rem;
     color: var(--pn-black);
+}
+
+.p-lg{
+    font-family: var(--pn-text-font);
+    font-weight: var(--pn-text-weight);
+    font-size: 1.25rem;
+    color: var(--pn-text-color);
+    line-height: 1.7rem;
+}
+.p-md{
+    font-family: var(--pn-text-font);
+    font-weight: var(--pn-text-weight);
+    font-size: 1rem;
+    color: var(--pn-text-color);
+    line-height: 1.5rem;
+}
+.p-sm{
+    font-family: var(--pn-text-font);
+    font-weight: var(--pn-text-weight);
+    font-size: 0.875rem;
+    color: var(--pn-text-color);
+    line-height: 1rem;
 }
