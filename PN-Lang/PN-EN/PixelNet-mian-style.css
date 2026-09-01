@@ -67,6 +67,13 @@
     --pn-title-weight: 600;
     --pn-text-font:"PlusJ" , Arial , sans-serif;
     --pn-text-weight: 400;
+    /* PN-SPACING (root) */
+    --pn-space-1: 0.25rem;
+    --pn-space-2: 0.5rem;
+    --pn-space-3: 0.75rem;
+    --pn-space-4: 1rem;
+    --pn-space-5: 1.5rem;
+    --pn-space-6: 2rem;
     }
 
     /* PN-TYPOGRAPHY (style) */
@@ -249,3 +256,77 @@ h6 {
     width: 4rem;
     height: 2.2rem;
 }
+
+    /* PN-COL-ROW-SYSTEM */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: aqua; , its for develop !! you don't need this*/ 
+}
+.col {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.col-1 {
+    width: 8.333333%;
+}
+.col-2 {
+    width: 16.666667%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666667%;
+}
+.col-12 {
+    width: 100%;
+}
+.m-1 { margin: var(--pn-space-1); }
+.m-2 { margin: var(--pn-space-2); }
+.m-3 { margin: var(--pn-space-3); }
+.m-4 { margin: var(--pn-space-4); }
+.m-5 { margin: var(--pn-space-5); }
+.m-6 { margin: var(--pn-space-6); }
+
+.p-1 { padding: var(--pn-space-1); }
+.p-2 { padding: var(--pn-space-2); }
+.p-3 { padding: var(--pn-space-3); }
+.p-4 { padding: var(--pn-space-4); }
+.p-5 { padding: var(--pn-space-5); }
+.p-6 { padding: var(--pn-space-6); }
+
+.g-1 { gap: var(--pn-space-1); }
+.g-2 { gap: var(--pn-space-2); }
+.g-3 { gap: var(--pn-space-3); }
+.g-4 { gap: var(--pn-space-4); }
+.g-5 { gap: var(--pn-space-5); }
+.g-6 { gap: var(--pn-space-6); }
