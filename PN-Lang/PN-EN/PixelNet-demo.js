@@ -3,19 +3,33 @@ PIXELNET UI — DEMO JAVASCRIPT
 ================================================== */
 
 /* ==================================================
-PN-DEMO COPY CODE
+PN-DEMO CODE PREVIEW
 ================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+  const templates = document.querySelectorAll("template");
+
+  templates.forEach((template) => {
+    const previewId = template.id.replace("-template", "");
+
+    const preview = document.getElementById(previewId);
+
+    if (!preview) {
+      return;
+    }
+
+    preview.textContent = template.innerHTML.trim();
+  });
+
+  /* ==================================================
+   PN-DEMO COPY CODE
+   ================================================== */
+
   const copyButtons = document.querySelectorAll(".demo-copy-btn");
 
   copyButtons.forEach((button) => {
     button.addEventListener("click", async () => {
       const targetId = button.dataset.copy;
-
-      if (!targetId) {
-        return;
-      }
 
       const codeElement = document.getElementById(targetId);
 
@@ -68,4 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-    

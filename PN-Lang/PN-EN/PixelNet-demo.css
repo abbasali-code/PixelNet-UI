@@ -382,3 +382,14 @@ RESPONSIVE
     align-items: flex-start;
   }
 }
+.demo-panel .row {
+    margin-bottom: 1rem;
+}
+
+.demo-panel .row + .row {
+    margin-top: 1rem;
+}
+.demo-hero-actions a {
+    text-decoration: none;
+    color: #eef2f5;
+}

@@ -1,578 +1,494 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>PixelNet UI — Demo</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PixelNet UI Core -->
+    <link rel="stylesheet" href="PixelNet-main-style.css" />
 
-<title>PixelNet UI — Demo</title>
+    <!-- Demo Styles -->
+    <link rel="stylesheet" href="PixelNet-demo.css" />
+  </head>
 
-<!-- PixelNet UI Core -->
-<link rel="stylesheet" href="PixelNet-main-style.css">
-
-<!-- Demo Styles -->
-<link rel="stylesheet" href="PixelNet-demo.css">
-
-
-</head>
-
-<body>
-
-
-<!-- ==================================================
+  <body>
+    <!-- ==================================================
      NAVBAR
-     ================================================== -->
+================================================== -->
 
-<header class="demo-navbar">
+    <header class="demo-navbar">
+      <div class="container demo-nav-container">
+        <a href="#" class="demo-logo"> PixelNet<span> UI</span> </a>
 
-    <div class="container demo-nav-container">
+        <span class="demo-version"> v0.1.1 </span>
+      </div>
+    </header>
 
-        <a href="#" class="demo-logo">
-            PixelNet<span> UI</span>
-        </a>
-
-        <span class="demo-version">
-            v0.1.1
-        </span>
-
-    </div>
-
-</header>
-
-
-<!-- ==================================================
+    <!-- ==================================================
      HERO
-     ================================================== -->
+================================================== -->
 
-<main>
-
-    <section class="demo-hero">
-
+    <main>
+      <section class="demo-hero">
         <div class="container">
+          <div class="demo-hero-content">
+            <p class="demo-eyebrow">PIXELNET UI</p>
 
-            <div class="demo-hero-content">
+            <h1>
+              Build beautiful interfaces
+              <span>with PixelNet.</span>
+            </h1>
 
-                <p class="demo-eyebrow">
-                    PIXELNET UI
-                </p>
+            <p class="p-lg demo-hero-text">
+              A lightweight and modern CSS UI framework for building beautiful,
+              responsive web interfaces.
+            </p>
 
-                <h1>
-                    Build beautiful interfaces
-                    <span>with PixelNet.</span>
-                </h1>
+            <div class="demo-hero-actions">
+              <a href="#components" class="btn btn-green b-lg"> Components </a>
 
-                <p class="p-lg demo-hero-text">
-                    A lightweight and modern CSS UI framework
-                    for building beautiful, responsive web interfaces.
-                </p>
+              <a
+                href="https://github.com/abbasali-code/PixelNet-UI"
+                class="btn btn-blue b-lg"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="demo-hero-actions">
+      <!-- ==================================================
+     TYPOGRAPHY
+================================================== -->
 
-                    <a href="#components" class="btn btn-green b-lg">
-                        Explore Components
-                    </a>
+      <section class="demo-section" id="typography">
+        <div class="container">
+          <div class="demo-section-heading">
+            <p class="demo-eyebrow">TYPOGRAPHY</p>
 
-                    <a
-                        href="https://github.com/abbasali-code/PixelNet-UI"
-                        class="btn btn-blue b-lg"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        GitHub
-                    </a>
+            <h2>Typography</h2>
 
-                </div>
+            <p class="p-md">
+              Simple typography utilities for headings and paragraphs.
+            </p>
+          </div>
 
+          <!-- TYPOGRAPHY PREVIEW -->
+
+          <div class="demo-panel">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <div class="demo-divider"></div>
+
+            <p class="p-lg">Large paragraph using PixelNet typography.</p>
+
+            <p class="p-md">Medium paragraph using PixelNet typography.</p>
+
+            <p class="p-sm">Small paragraph using PixelNet typography.</p>
+          </div>
+
+          <!-- TYPOGRAPHY CODE -->
+
+          <div class="demo-code-box">
+            <div class="demo-code-header">
+              <span>HTML</span>
+
+              <button
+                class="btn btn-green b-sm demo-copy-btn"
+                data-copy="typography-code"
+              >
+                Copy
+              </button>
             </div>
 
+            <pre
+              class="demo-code-preview"
+            ><code id="typography-code"></code></pre>
+          </div>
+
+          <template id="typography-code-template">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+
+            <p class="p-lg">Large paragraph</p>
+
+            <p class="p-md">Medium paragraph</p>
+
+            <p class="p-sm">Small paragraph</p>
+          </template>
         </div>
+      </section>
 
-    </section>
+      <!-- ==================================================
+     BUTTONS
+================================================== -->
 
+      <section class="demo-section demo-section-alt" id="buttons">
+        <div class="container">
+          <div class="demo-section-heading">
+            <p class="demo-eyebrow">BUTTONS</p>
+
+            <h2>Buttons</h2>
+
+            <p class="p-md">Color variants and size utilities.</p>
+          </div>
+
+          <!-- BUTTON PREVIEW -->
+
+          <div class="demo-panel">
+            <h3>Colors</h3>
+
+            <div class="demo-button-row">
+              <button class="btn">Default</button>
+
+              <button class="btn btn-green">Green</button>
+
+              <button class="btn btn-blue">Blue</button>
+
+              <button class="btn btn-red">Red</button>
+
+              <button class="btn btn-orange">Orange</button>
+
+              <button class="btn btn-yellow">Yellow</button>
+
+              <button class="btn">Pink</button>
+
+              <button class="btn btn-purple">Purple</button>
+            </div>
+
+            <div class="demo-divider"></div>
+
+            <h3>Sizes</h3>
+
+            <div class="demo-button-row">
+              <button class="btn btn-green b-sm">Small</button>
+
+              <button class="btn btn-green b-md">Medium</button>
+
+              <button class="btn btn-green b-lg">Large</button>
+            </div>
+          </div>
+
+          <!-- BUTTON CODE -->
+
+          <div class="demo-code-box">
+            <div class="demo-code-header">
+              <span>HTML</span>
+
+              <button
+                class="btn btn-green b-sm demo-copy-btn"
+                data-copy="button-code"
+              >
+                Copy
+              </button>
+            </div>
+
+            <pre class="demo-code-preview"><code id="button-code"></code></pre>
+          </div>
+
+          <template id="button-code-template">
+            <button class="btn">Default Button</button>
+
+            <button class="btn btn-green">Green Button</button>
+
+            <button class="btn btn-blue">Blue Button</button>
+
+            <button class="btn btn-green b-sm">Small Button</button>
+
+            <button class="btn btn-green b-md">Medium Button</button>
+
+            <button class="btn btn-green b-lg">Large Button</button>
+          </template>
+        </div>
+      </section>
+
+      <!-- ==================================================
+     GRID
+================================================== -->
+
+      <section class="demo-section" id="grid">
+        <div class="container">
+          <div class="demo-section-heading">
+            <p class="demo-eyebrow">LAYOUT</p>
+
+            <h2>Grid System</h2>
+
+            <p class="p-md">
+              Build responsive layouts using container, row and column
+              utilities.
+            </p>
+          </div>
+
+          <!-- GRID PREVIEW -->
+
+          <div class="demo-panel">
+            <div class="row g-3 demo-grid-row">
+              <div class="col-4">
+                <div class="demo-grid-box">col-4</div>
+              </div>
+
+              <div class="col-4">
+                <div class="demo-grid-box">col-4</div>
+              </div>
+
+              <div class="col-4">
+                <div class="demo-grid-box">col-4</div>
+              </div>
+            </div>
+
+            <div class="row g-3 demo-grid-row">
+              <div class="col-6">
+                <div class="demo-grid-box">col-6</div>
+              </div>
+
+              <div class="col-6">
+                <div class="demo-grid-box">col-6</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GRID CODE -->
+
+          <div class="demo-code-box">
+            <div class="demo-code-header">
+              <span>HTML</span>
+
+              <button
+                class="btn btn-green b-sm demo-copy-btn"
+                data-copy="grid-code"
+              >
+                Copy
+              </button>
+            </div>
+
+            <pre class="demo-code-preview"><code id="grid-code"></code></pre>
+          </div>
+
+          <template id="grid-code-template">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-4">Content</div>
+
+                <div class="col-4">Content</div>
+
+                <div class="col-4">Content</div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!-- ==================================================
+     CARDS
+================================================== -->
+
+      <section class="demo-section demo-section-alt" id="cards">
+        <div class="container">
+          <div class="demo-section-heading">
+            <p class="demo-eyebrow">CARDS</p>
+
+            <h2>Cards</h2>
+
+            <p class="p-md">
+              Flexible cards with header, body and footer sections.
+            </p>
+          </div>
+
+          <!-- CARD PREVIEW -->
+
+          <div class="demo-card-grid">
+            <div class="card">
+              <div class="card-header">
+                <img src="assets/image/image.jpg" alt="PixelNet UI" />
+              </div>
+
+              <div class="card-body">
+                <h3>PixelNet UI</h3>
+
+                <p>
+                  A lightweight and modern UI framework for beautiful web
+                  interfaces.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-green b-lg">Learn More</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <img src="assets/image/image.jpg" alt="PixelNet Components" />
+              </div>
+
+              <div class="card-body">
+                <h3>Components</h3>
+
+                <p>
+                  Reusable components designed to work together with the
+                  PixelNet system.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-blue b-lg">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD CODE -->
+
+          <div class="demo-code-box">
+            <div class="demo-code-header">
+              <span>HTML</span>
+
+              <button
+                class="btn btn-green b-sm demo-copy-btn"
+                data-copy="card-code"
+              >
+                Copy
+              </button>
+            </div>
+
+            <pre class="demo-code-preview"><code id="card-code"></code></pre>
+          </div>
+
+          <template id="card-code-template">
+            <div class="card">
+              <div class="card-header">
+                <img src="image.jpg" alt="Card image" />
+              </div>
+
+              <div class="card-body">
+                <h3>Card Title</h3>
+
+                <p>Card content goes here.</p>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!-- ==================================================
+     ALERTS
+================================================== -->
+
+      <section class="demo-section" id="alerts">
+        <div class="container">
+          <div class="demo-section-heading">
+            <p class="demo-eyebrow">ALERTS</p>
+
+            <h2>Alerts</h2>
+
+            <p class="p-md">
+              Display notifications, messages and status information with
+              different color variants.
+            </p>
+          </div>
+
+          <!-- ALERT PREVIEW -->
+
+          <div class="demo-alert-list">
+            <div class="alert">Default alert message.</div>
+
+            <div class="alert alert-green">
+              Success! Your changes have been saved.
+            </div>
+
+            <div class="alert alert-blue">
+              Information: A new update is available.
+            </div>
+
+            <div class="alert alert-red">Error! Something went wrong.</div>
+
+            <div class="alert alert-yellow">
+              Warning! Please check your information.
+            </div>
+
+            <div class="alert alert-orange">
+              Attention! This action requires confirmation.
+            </div>
+
+            <div class="alert alert-pink">Welcome to PixelNet UI.</div>
+
+            <div class="alert alert-purple">PixelNet UI is now available.</div>
+
+            <div class="alert alert-white">A clean white alert variant.</div>
+          </div>
+
+          <!-- ALERT CODE -->
+
+          <div class="demo-code-box">
+            <div class="demo-code-header">
+              <span>HTML</span>
+
+              <button
+                class="btn btn-green b-sm demo-copy-btn"
+                data-copy="alert-code"
+              >
+                Copy
+              </button>
+            </div>
+
+            <pre class="demo-code-preview"><code id="alert-code"></code></pre>
+          </div>
+
+          <template id="alert-code-template">
+            <div class="alert">Default alert message.</div>
+
+            <div class="alert alert-green">
+              Success! Your changes have been saved.
+            </div>
+
+            <div class="alert alert-blue">Information message.</div>
+
+            <div class="alert alert-red">Error message.</div>
+          </template>
+        </div>
+      </section>
+    </main>
 
     <!-- ==================================================
-         TYPOGRAPHY
-         ================================================== -->
-
-    <section class="demo-section" id="typography">
-
-        <div class="container">
-
-            <div class="demo-section-heading">
-
-                <p class="demo-eyebrow">
-                    TYPOGRAPHY
-                </p>
-
-                <h2>
-                    Typography
-                </h2>
-
-                <p class="p-md">
-                    Simple typography utilities for headings
-                    and paragraphs.
-                </p>
-
-            </div>
-
-
-            <div class="demo-panel">
-
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
-
-                <div class="demo-divider"></div>
-
-                <p class="p-lg">
-                    Large paragraph using PixelNet typography.
-                </p>
-
-                <p class="p-md">
-                    Medium paragraph using PixelNet typography.
-                </p>
-
-                <p class="p-sm">
-                    Small paragraph using PixelNet typography.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         BUTTONS
-         ================================================== -->
-
-    <section class="demo-section demo-section-alt" id="buttons">
-
-        <div class="container">
-
-            <div class="demo-section-heading">
-
-                <p class="demo-eyebrow">
-                    BUTTONS
-                </p>
-
-                <h2>
-                    Buttons
-                </h2>
-
-                <p class="p-md">
-                    Color variants and size utilities.
-                </p>
-
-            </div>
-
-
-            <div class="demo-panel">
-
-                <h3>
-                    Colors
-                </h3>
-
-                <div class="demo-button-row">
-
-                    <button class="btn">
-                        Default
-                    </button>
-
-                    <button class="btn btn-green">
-                        Green
-                    </button>
-
-                    <button class="btn btn-blue">
-                        Blue
-                    </button>
-
-                    <button class="btn btn-red">
-                        Red
-                    </button>
-
-                    <button class="btn btn-orange">
-                        Orange
-                    </button>
-
-                    <button class="btn btn-yellow">
-                        Yellow
-                    </button>
-
-                    <button class="btn btn-pink">
-                        Pink
-                    </button>
-
-                    <button class="btn btn-purple">
-                        Purple
-                    </button>
-
-                </div>
-
-
-                <div class="demo-divider"></div>
-
-
-                <h3>
-                    Sizes
-                </h3>
-
-                <div class="demo-button-row">
-
-                    <button class="btn btn-green b-sm">
-                        Small
-                    </button>
-
-                    <button class="btn btn-green b-md">
-                        Medium
-                    </button>
-
-                    <button class="btn btn-green b-lg">
-                        Large
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         GRID
-         ================================================== -->
-
-    <section class="demo-section" id="grid">
-
-        <div class="container">
-
-            <div class="demo-section-heading">
-
-                <p class="demo-eyebrow">
-                    LAYOUT
-                </p>
-
-                <h2>
-                    Grid System
-                </h2>
-
-                <p class="p-md">
-                    Build responsive layouts using container,
-                    row and column utilities.
-                </p>
-
-            </div>
-
-
-            <div class="demo-panel">
-
-                <div class="row g-3">
-
-                    <div class="col-4">
-                        <div class="demo-grid-box">
-                            col-4
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="demo-grid-box">
-                            col-4
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="demo-grid-box">
-                            col-4
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="row g-3">
-
-                    <div class="col-6">
-                        <div class="demo-grid-box">
-                            col-6
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="demo-grid-box">
-                            col-6
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         CARDS
-         ================================================== -->
-
-    <section class="demo-section demo-section-alt" id="cards">
-
-        <div class="container">
-
-            <div class="demo-section-heading">
-
-                <p class="demo-eyebrow">
-                    CARDS
-                </p>
-
-                <h2>
-                    Cards
-                </h2>
-
-                <p class="p-md">
-                    Flexible cards with header, body and footer sections.
-                </p>
-
-            </div>
-
-
-            <div class="demo-card-grid">
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <img
-                            src="assets/image/image.jpg"
-                            alt="PixelNet UI"
-                        >
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <h3>
-                            PixelNet UI
-                        </h3>
-
-                        <p>
-                            A lightweight and modern UI framework
-                            for beautiful web interfaces.
-                        </p>
-
-                    </div>
-
-                    <div class="card-footer">
-
-                        <button class="btn btn-green b-lg">
-                            Learn More
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-header">
-
-                        <img
-                            src="assets/image/image.jpg"
-                            alt="PixelNet Components"
-                        >
-
-                    </div>
-
-                    <div class="card-body">
-
-                        <h3>
-                            Components
-                        </h3>
-
-                        <p>
-                            Reusable components designed to work
-                            together with the PixelNet system.
-                        </p>
-
-                    </div>
-
-                    <div class="card-footer">
-
-                        <button class="btn btn-blue b-lg">
-                            Explore
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==================================================
-         ALERTS
-         ================================================== -->
-
-    <section class="demo-section" id="alerts">
-
-        <div class="container">
-
-            <div class="demo-section-heading">
-
-                <p class="demo-eyebrow">
-                    ALERTS
-                </p>
-
-                <h2>
-                    Alerts
-                </h2>
-
-                <p class="p-md">
-                    Display notifications, messages and status
-                    information with different color variants.
-                </p>
-
-            </div>
-
-
-            <div class="demo-alert-list">
-
-                <div class="alert">
-                    Default alert message.
-                </div>
-
-                <div class="alert alert-green">
-                    Success! Your changes have been saved.
-                </div>
-
-                <div class="alert alert-blue">
-                    Information: A new update is available.
-                </div>
-
-                <div class="alert alert-red">
-                    Error! Something went wrong.
-                </div>
-
-                <div class="alert alert-yellow">
-                    Warning! Please check your information.
-                </div>
-
-                <div class="alert alert-orange">
-                    Attention! This action requires confirmation.
-                </div>
-
-                <div class="alert alert-pink">
-                    Welcome to PixelNet UI.
-                </div>
-
-                <div class="alert alert-purple">
-                    PixelNet UI v0.1.1 is now available.
-                </div>
-
-                <div class="alert alert-white">
-                    A clean white alert variant.
-                </div>
-
-            </div>
-
-
-            <!-- ALERT CODE -->
-
-            <div class="demo-code-box">
-
-                <div class="demo-code-header">
-
-                    <span>
-                        HTML
-                    </span>
-
-                    <button
-                        class="btn btn-green b-sm demo-copy-btn"
-                        data-copy="alert-code"
-                    >
-                        Copy
-                    </button>
-
-                </div>
-
-                <pre id="alert-code"><code>&lt;div class="alert alert-green"&gt;
-Success! Your changes have been saved.
-
-
-</div></code></pre>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-</main>
-
-
-<!-- ==================================================
      FOOTER
-     ================================================== -->
+================================================== -->
 
-<footer class="demo-footer">
-
-    <div class="container">
-
+    <footer class="demo-footer">
+      <div class="container">
         <div class="demo-footer-content">
+          <div>
+            <h3>PixelNet UI</h3>
 
-            <div>
+            <p class="p-sm">Lightweight. Modern. Responsive.</p>
+          </div>
 
-                <h3>
-                    PixelNet UI
-                </h3>
+          <div class="demo-footer-meta">
+            <p class="p-sm">Version 0.1.1</p>
 
-                <p class="p-sm">
-                    Lightweight. Modern. Responsive.
-                </p>
-
-            </div>
-
-
-            <div class="demo-footer-meta">
-
-                <p class="p-sm">
-                    Version 0.1.1
-                </p>
-
-                <p class="p-sm">
-                    © 2026 PixelNet UI
-                </p>
-
-            </div>
-
+            <p class="p-sm">© 2026 PixelNet UI</p>
+          </div>
         </div>
+      </div>
+    </footer>
 
-    </div>
+    <!-- Demo JavaScript -->
 
-</footer>
-
-
-<!-- Demo JavaScript -->
-<script src="PixelNet-demo.js" defer></script>
-
-
-</body>
-
+    <script src="PixelNet-demo.js" defer></script>
+  </body>
 </html>
